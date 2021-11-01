@@ -9,7 +9,17 @@ page that contains all the code you need for a new page.-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <title>OT CS Capstone survey page</title>
+  <title> directions page</title>
+
+
+  <script>
+    function clear(){
+      for (i=1, i <=6, i++){
+        $('input[id="flexRadioDefault '+ i +'"]')=off;
+      }
+    }
+  </script>
+
 </head>
 
 <body>
@@ -24,7 +34,7 @@ page that contains all the code you need for a new page.-->
         <input type="text" class="form-control" id="inputPassword" placeholder="123 street...">
       </div>
     </div>
-    <p><div class="form-group row">
+    <div class="form-group row">
      <p>Do you have access to a bike?</p>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -38,9 +48,8 @@ page that contains all the code you need for a new page.-->
          No
         </label>
       </div>
-      
-    </div></p>
-    <p><div class="form-group row">
+    </div>
+    <div class="form-group row">
       <p>Are you able to walk if needed?</p>
        <div class="form-check">
          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
@@ -56,30 +65,46 @@ page that contains all the code you need for a new page.-->
        </div>
        
 
-     </div></p>
-    </div>
+     </div>
+     
     <p><div class="form-group row">
       <p>Do you have a clipper card?</p> 
        <div class="form-check">
-         <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
+         <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault5">
          <label class="form-check-label" for="flexRadioDefault1">
           Yes
          </label>
        </div>
        <div class="form-check">
-         <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4" checked>
+         <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault6" checked>
          <label class="form-check-label" for="flexRadioDefault2">
           No
          </label>
        </div>
        <p> <a href="https://www.clippercard.com/ClipperWeb/get.html">(link to get clipper card)</a></p>
-
-     </div></p>
+      </p>
+    
+  
     </div>
   </form>
 
-
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   Check if you'd like to be notified if faster routes open
+  </label>
+</div>
   </div>
+  <div class="form-group row">
+    <label for="text" class="col-sm-2 col-form-label">Enter email to be notified:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputPassword" placeholder="Email">
+    </div>
+  </div>
+  
+   
+ <center><a class="btn btn-primary" href="resultsexample.html" role="button">Submit</a>
+ </center> 
   <!--Bootstrap and other JS scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
